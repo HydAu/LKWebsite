@@ -1,0 +1,179 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    title Laure Kamalandua
+    // Bootstrap Core CSS
+    link(href='stylesheets/bootstrap.css', rel='stylesheet')
+    // Custom CSS
+    link(href='stylesheets/index.css', rel='stylesheet')
+    link(href='stylesheets/typing.css', rel='stylesheet')
+    link(href='stylesheets/seperator.css', rel='stylesheet')
+    link(href='stylesheets/console.css', rel='stylesheet')
+    // Custom Fonts
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
+    link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+  body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    // Navigation Section
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+            i.fa.fa-bars(style='margin-top:-8px;font-size:27px;')
+          a.navbar-brand.page-scroll(href='#page-top')
+            span.light Laure Kamalandua
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          ul.nav.navbar-nav
+            // Hidden li included to remove active class from about link when scrolled up past about section
+            li.hidden
+              a(href='#page-top')
+            li
+              a.page-scroll(href='#services') Blog
+            //
+              <li>
+              <a class="page-scroll" href="#projects">Portfolio</a>
+              </li>
+            li
+              a.page-scroll(href='mailto:hi@laurekamalandua.com') Contact
+            li
+              a.page-scroll(href='http://github.com/laurekamalandua', target='_blank') Github
+            //
+              <li>
+              <a class="" href="#github"><i class="fa fa-github"></i></a>
+              </li>
+              <li>
+              <a class="" href="#github"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+              <a class="" href="#github"><i class="fa fa-facebook"></i></a>
+              </li>
+    // Profile Section
+    #profile-header
+      .container
+        .row
+          .col-md-8.col-md-offset-2.centered
+            img.img-circle(src='images/profile-pic.jpg', height='175px', width='175px')
+    // Intro Section
+    #intro
+      .container
+        .row
+          .col-md-8.col-md-offset-2.centered
+            h2
+              | Just a cloud, startup and devops enthusiast
+              br
+              |                 sharing my stories
+            a.btn.btn-circle.page-scroll(href='#intro')
+              i.fa.fa-angle-double-down.animated
+    svg#bigTriangleColor(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
+      path(d='M0 0 L50 100 L100 0 Z')
+    // Seperator Section
+    //
+      <svg id="clouds" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path d="M-5 100 Q 0 20 5 100 Z
+      M0 100 Q 5 0 10 100
+      M5 100 Q 10 30 15 100
+      M10 100 Q 15 10 20 100
+      M15 100 Q 20 30 25 100
+      M20 100 Q 25 -10 30 100
+      M25 100 Q 30 10 35 100
+      M30 100 Q 35 30 40 100
+      M35 100 Q 40 10 45 100
+      M40 100 Q 45 50 50 100
+      M45 100 Q 50 20 55 100
+      M50 100 Q 55 40 60 100
+      M55 100 Q 60 60 65 100
+      M60 100 Q 65 50 70 100
+      M65 100 Q 70 20 75 100
+      M70 100 Q 75 45 80 100
+      M75 100 Q 80 30 85 100
+      M80 100 Q 85 20 90 100
+      M85 100 Q 90 50 95 100
+      M90 100 Q 95 25 100 100
+      M95 100 Q 100 15 105 100 Z">
+      </path>
+      </svg>
+    // Console Section
+    #console(div='')
+      .window
+        .handle
+          .buttons
+            button.minimize
+            button.maximize
+          span.title
+        .terminal
+          #typing
+            main.scene.shell
+              .actor
+                .actor__prefix
+                #alpha.actor__content
+    // Typing Section
+    #typing
+      main.scene.shell
+        .actor
+          .actor__prefix
+          #alpha.actor__content
+    // Blog Section
+    #blog
+      .row.nopadding.centered
+        .col-md-4.bg-color.bg-jelly.squares
+          h3 Inspiring Powershell
+          i.ion-ios7-cloud-download-outline
+          p
+            | A couple of days ago, I bumped into a published script on Technet, named “Inspire Me”. It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script.
+        .col-md-4.bg-color.bg-turqoise.squares
+          h3 Tech Events 18/02 - 30/02
+          i.ion-ios7-copy-outline
+          p
+            | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+        .col-md-4.bg-color.bg-green.squares
+          h3 LiveNode is launching
+          i.ion-ios7-bell-outline
+          p
+            | A couple of days ago, I bumped into a published script on Technet, named “Inspire Me”. It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script.
+    // Footer Section
+    #footer
+      .container
+        .row
+          .col-md-12.centered
+            a(href='http://github.com/laurekamalandua', target='_blank')
+              i.fa.fa-github
+            a(href='http://twitter.com/laurekamalandua', target='_blank')
+              i.fa.fa-twitter
+            a(href='http://instagram.com/laurellondon', target='_blank')
+              i.fa.fa-instagram
+            a(href='http://linkedin.com/laurellondon', target='_blank')
+              i.fa.fa-linkedin
+    #pre-footer
+      .container
+        .row
+          .col-md-12.centered
+            p
+              | Developed with   
+              i.fa.fa-heart
+              br
+              | Gracefully running on NodeJs 4.3, Express 0.2, Hexo 2.342
+              br
+              a(href='mailto:hi@laurekamalandua.com') hi@laurekamalandua.com
+    // Page Loading
+    script(src='javascripts/loading.js')
+    // jQuery
+    script(src='javascripts/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='javascripts/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='javascripts/jquery.easing.min.js')
+    // Custom Theme JavaScript
+    script(src='javascripts/index.js')
+    // Animated Typing Javascript
+    script(src='javascripts/theater.js')
+    script(src='javascripts/typing.js')
+    script(type='text/javascript')

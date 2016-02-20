@@ -5,8 +5,6 @@ tags:
 - Powershell
 - Inspiration
 coverImage: header-2.jpg
-thumbnailImage: header-1.jpg
-thumbnailImagePosition: bottom
 ---
 <p>A couple of days ago, I bumped into a published script on Technet, named "Inspire Me". It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script and encountered the following lines:</b>
 

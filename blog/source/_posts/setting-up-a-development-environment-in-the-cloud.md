@@ -10,8 +10,6 @@ tags:
 - Github
 - Hexo
 coverImage: header-2.jpg
-thumbnailImage: header-1.jpg
-thumbnailImagePosition: bottom
 ---
 Some time ago, a men said: 
 {% blockquote %}

@@ -3,8 +3,6 @@ title: Tech events in February
 date: 2016-02-19 17:44:22
 tags:
 coverImage: header-2.jpg
-thumbnailImage: header-1.jpg
-thumbnailImagePosition: bottom
 ---
 Here are some interesting go-to's for 24 February to 2 March:<!-- more -->
 **

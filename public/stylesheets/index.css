@@ -202,6 +202,12 @@ a:focus {
     font-size: 27px;
 }
 
+@media(max-width:768px) {
+    .navbar-brand {
+      font-size: 21.8px;
+    }
+}
+
 .navbar-custom img {
     padding-bottom: 6px;
     padding-left: 6px;
@@ -314,6 +320,10 @@ a:focus {
 /* -- Blog Section -- */
 #blog {
 	padding: 0px !important;
+}
+
+#blog a {
+  color: #fff;
 }
 
 #blog p {

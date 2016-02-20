@@ -14,7 +14,9 @@ thumbnailImage: header-1.jpg
 thumbnailImagePosition: bottom
 ---
 Some time ago, a men said: 
-{% hl_text yellow %}“Learn one language, conquer the world. Be conceited, twist and twirl”.{% endhl_text %}
+{% blockquote %}
+“Learn one language, conquer the world. Be conceited, twist and twirl”.
+{% endblockquote %}
 
 Well. That’s not exactly what he said, but something interesting in software engineering happened in 2009.  Ryan Dahl launched NodeJS. A runtime environment for server-side web applications. Yes. Server side web applications. People could now start writing Javascript in the front (client-side) and Javascript in the back (server-side).<!-- more --> A new software bundle to simplify web development was born, namely the <b>MEAN (MongoDB, ExpressJS, AngularJS, NodeJS) stack</b>. All of these components are based on Javascript and offer the following improvements: 
 <br>
@@ -31,9 +33,12 @@ In this series we’ll start from the ground up to get one of our developed appl
 The following design reflects what we’ll get into:
 <br>
 
-* A client machine either running on Windows or Linux hosting a remote Github repository. This will be our development machine on which we will develop the application that is ready for the cloud. We will handle version control of our application through Git and Github to revision the code before it is pushed into production.
-* Github is used to centralize the version control of our code. When multiple developers are contributing to our application, we would want to keep track of the changes that are going to be released into production. 
-* A Heroku server. This will be our development/production barrier. The application developed on our client machine will be live on this location and automatically refreshed every single time files on the Github repository are updated. This will allow us to release changes into production when we feel ready to commit to them.      
-* A production server running on Linux Debian 8 (Jessie). After we have provisioned changes and feel like things are looking great on the Heroku development environment, we will finally pull the Github changes into production on an incremental basis. 
+{% image http://s7.postimg.org/8txvoyrsb/high_level.jpg %}
+
+<p>
+{% hl_text #fbf5b7 %}A client machine either running on Windows or Linux hosting a remote Github repository. This will be our development machine on which we will develop the application that is ready for the cloud. We will handle version control of our application through Git and Github to revision the code before it is pushed into production.{% endhl_text %}</p>
+<p>{% hl_text #fafafa %}Github is used to centralize the version control of our code. When multiple developers are contributing to our application, we would want to keep track of the changes that are going to be released into production.{% endhl_text %}</p>
+<p>{% hl_text #b7fbb7 %}A Heroku server. This will be our development/production barrier. The application developed on our client machine will be live on this location and automatically refreshed every single time files on the Github repository are updated. This will allow us to release changes into production when we feel ready to commit to them.{% endhl_text %}</p>      
+<p>{% hl_text #ddd8fb %}A production server running on Linux Debian 8 (Jessie). After we have provisioned changes and feel like things are looking great on the Heroku development environment, we will finally pull the Github changes into production on an incremental basis.{% endhl_text %}</p> 
 
 So this was a brief introduction of what we’re going to be working on. I look forward to lead you through Part II of this series in an upcoming post. 

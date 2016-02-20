@@ -31,14 +31,15 @@ image_dir: assets/images
 #                               # Go to http://fontawesome.io/icons/ to find class name of icon
 sidebar:
     menu:
+        home:
+            title: Blog Index
+            url: /
+            icon: chevron-left
         website: 
             title: Website
-            url: http://127.0.0.1:3000 "title" target="_self"
-            icon: chevron-left
-        home:
-            title: global.home
-            url: /
+            url: http://laurekamalandua.com "title" target="_self"
             icon: home
+
         # tags:
         #     title: global.tags
         #     url: /all-tags

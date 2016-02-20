@@ -294,7 +294,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background-color: #22304a;
-    /*background: url(../img/intro-bg-2.jpg) no-repeat bottom center scroll;
+    /*background: url(../images/intro-bg-3.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -333,6 +333,7 @@ a:focus {
 }
 
 #blog h3 {
+  padding-top: 60px;
   font-size: 22px;
 }
 
@@ -342,13 +343,10 @@ a:focus {
 }
 
 .bg-color {
-	height: 350px;
+	min-height: 350px;
 	margin: 0px;
 }
 
-.squares {
-	padding-top: 90px;
-}
 
 .squares i {
 	font-size: 50px;

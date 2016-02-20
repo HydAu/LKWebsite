@@ -1,5 +1,5 @@
 ---
-title: Tech events February
+title: Tech events in February
 date: 2016-02-19 17:44:22
 tags:
 coverImage: header-2.jpg

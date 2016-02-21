@@ -343,10 +343,26 @@ a:focus {
 }
 
 .bg-color {
-	min-height: 350px;
+	height: 290px;
 	margin: 0px;
 }
 
+@media(max-width:768px) {
+  .bg-color {
+    height: 410px;
+    margin: 0px;
+  }
+}
+
+
+.squares i {
+	font-size: 50px;
+}
+
+.squares p {
+	color: white;
+	font-size: 15px;
+}
 
 .squares i {
 	font-size: 50px;
@@ -396,7 +412,15 @@ a:focus {
     color: white;
 }
 
+@media(max-width:768px) {
+  #pre-footer {
+      background-color: #1b3444;
+      padding-bottom: 20px;
+  }
+}
 
+
+  
 /* -- Powershell Shell -- */ 
 /*
 .shell {

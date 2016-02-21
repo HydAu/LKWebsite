@@ -138,7 +138,7 @@ clear_reading: true
 # Head title displayed at the top of the table of contents.
 toc_title: Table of contents
 # Display thumbnail image of each post on index pages (false: disabled, true: enabled)
-thumbnail_image: true
+thumbnail_image: false
 # Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`)
 # Set this value to `right` if you have old posts to keep the old style on them
 # and define `thumbnailImagePosition` on a post to overwrite this setting

@@ -306,19 +306,6 @@ a:focus {
     font-weight: 400;
 }
 
-
-/* -- Intro -- */
-#intro {
-    display: none;
-    background-color: #22304a;
-    padding-bottom: 90px;
-}
-
-#intro h2 {
-    font-size: 27px;
-    font-weight: 400;
-}
-
 /* -- Blog Section -- */
 #blog {
 	padding: 0px !important;

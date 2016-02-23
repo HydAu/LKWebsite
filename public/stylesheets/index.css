@@ -306,6 +306,11 @@ a:focus {
     font-weight: 400;
 }
 
+/* -- Intro Section -- */
+#intro {
+  display: none;
+}
+
 /* -- Blog Section -- */
 #blog {
 	padding: 0px !important;

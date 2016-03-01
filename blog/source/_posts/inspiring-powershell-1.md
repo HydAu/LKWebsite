@@ -7,7 +7,7 @@ tags:
 coverImage: header-2.jpg
 clearReading: true
 ---
-<p>A couple of days ago, I bumped into a published script on Technet, named "Inspire Me". It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script and encountered the following lines:</b>
+<p>A couple of days ago, I bumped into a published script on Technet, named "Inspire Me". It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script and encountered the following lines:<!-- more --></b>
 ```powershell
 # List of Quotes added in to Array 
 [string[]]$quoteList =  
@@ -16,7 +16,7 @@ clearReading: true
     "All the art of living lies in a fine mingling of letting go and holding on. - Henry Ellis", 
     "You are not YET complete. You have no right to judge yourself because you are still work in progress !", 
 ```
-<!-- more -->
+
 The developer had hard-coded the inspirational quotes, which is not inspiring at all. Since there are no limitations to inspiration and creativity, I decided to rewrite this concept. The script should be able to provide an eternal amount of quotes in a random manner. I made use of the [Forismatic API](http://forismatic.com/) to achieve this object. In addition, there is some smart mathematics in the background to format the quotes correctly. Depending on the length of the quote, the string is breaked mid index and stars are formatted on the top and at the bottom of the quote. There's even a Set-PsProfile function included that will automatically add the module to your Powershell profile. This way you can admire a quote each time your shell is launched. So far, so good, eh. It was interesting to be retweeted by Jeffrey Snover himself (the inventor of Powershell). 
 
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/jsnover">@jsnover</a> when everything else lets you down, besides <a href="https://twitter.com/hashtag/Powershell?src=hash">#Powershell</a>. I&#39;m getting creative. <a href="https://t.co/yiPqCiUyFa">https://t.co/yiPqCiUyFa</a> <a href="https://t.co/gLZiXEHWi2">pic.twitter.com/gLZiXEHWi2</a></p>&mdash; Laure Kamalandua (@laurekamalandua) <a href="https://twitter.com/laurekamalandua/status/699140727448735744">February 15, 2016</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

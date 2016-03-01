@@ -12,7 +12,7 @@ tags:
 - Setting up a development and production environment in the cloud
 coverImage: header-2.jpg
 ---
-In the previous post I gave a brief introduction to the topic of this series and how we were going to approach setting up a development and production environment in the cloud. Ideally automating the application releases as much as possible. Now, we're going to get our hands dirty. This post will cover the setup of the development environment with the objective to get to the production environment in Part III. Let's work our way up in the following order:<br>
+In the previous post I gave a brief introduction to the topic of this series and how we were going to approach setting up a development and production environment in the cloud. Ideally automating the application releases as much as possible. Now, we're going to get our hands dirty. This post will cover the setup of the development environment with the objective to get to the production environment in Part III. <!-- more -->Let's work our way up in the following order:<br>
 
 {% image http://s11.postimg.org/bn5019hib/high_level_2.jpg %}
 

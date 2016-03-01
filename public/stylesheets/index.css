@@ -294,7 +294,7 @@ a:focus {
     text-align: center;
     color: #fff;
     background-color: #22304a;
-    background: url(../images/new-york.jpg) no-repeat bottom center scroll;
+     background: url(../images/new-york.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -363,15 +363,15 @@ a:focus {
 }
 
 .bg-jelly {
-	background-color: #326080;
+	background-color: #222f47;
 }
 
 .bg-turqoise {
-	background-color: #284e68;
+	background-color: #202b40;
 }
 
 .bg-green {
-	background-color: #214055;
+	background-color: #1b2638; 
 }
 
 .bg-yellow {
@@ -380,7 +380,7 @@ a:focus {
 
 /* -- Footer Section -- */
 #pre-footer {
-    background-color: #1b3444;
+    background-color: #171f2e;
 }
 
 #pre-footer p {

@@ -1,5 +1,5 @@
 ---
-title: 'Setting up a development and production environment in the cloud. Part I'
+title: 'Setting up a NodeJS development and production environment in the cloud. Part I'
 date: 2016-02-20 10:24:25
 tags:
 - NodeJS

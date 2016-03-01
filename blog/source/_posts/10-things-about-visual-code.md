@@ -1,5 +1,5 @@
 ---
-title: 10 things to love about Visual Studio Code
+title: 10 things to love about Microsoft's Visual Studio Code
 date: 2016-02-26 15:00:09
 tags:
 - Visual Code
@@ -7,7 +7,7 @@ tags:
 - IDE
 coverImage: header-2.jpg
 ---
-Visual Studio Code is Microsoft's latest integrated development environment. It's available on Windows, Linux, Mac and entirely free. Partly based on Github's Atom engine, I decided to give it a spin. To my surprise it was quite an upgrade compared to "Sublime Text 3" and I haven't looked back ever since.<br><br><!-- more --> 
+Visual Studio Code is Microsoft's latest integrated development environment. It's available on Windows, Linux, Mac and entirely free. Partly based on Github's Atom engine, I decided to give it a spin. To my surprise it was quite an upgrade compared to "Sublime Text 3" and I haven't looked back ever since.<!-- more --> 
 
 1. Language support 
 2. Layout 

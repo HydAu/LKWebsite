@@ -32,29 +32,27 @@ Installation of Node is very straightforward. The downloads for each platform ca
 
 <br><br><h5>Setting up our first application</h5>
 
-Once Node is installed we can get to the step of setting up our first application. To simplify things we'll set up a blogging application through Hexo. Minimum effort to be spend on development, since the objective is to get the architecture right. We're going to install Hexo. It is a blogging framework for NodeJS with all of this functionality baked in. Open an <b>elevated command prompt </b> and set up a working directory for your project: 
-
+Once Node is installed we can get to the step of setting up our first application. To simplify things we'll set up a blogging application through Hexo. Minimum effort to be spend on development, since the objective is to get the architecture right. We're going to install Hexo. It is a blogging framework for NodeJS with all of this functionality baked in. Open an <b>elevated command prompt </b> and set up a working directory for your project:
 ``` powershell
 D:\ mkdir development
 ```
-Next we're going to initialize Hexo. This involves installing the Hexo CLI (command line interface) on a global level.
-The command line interface allows us to manage our hexo applications. 
-Do not forget to execute any installation from an <b>elevated</b> prompt. 
-Packages will be incomplete and the application will not run properly if you do not do so under administrator privileges.    
+Next we're going to initialize Hexo. This involves installing the Hexo CLI (command line interface) on a global level. The command line interface allows us to manage our hexo applications.
+
  ``` powershell
 D:\ npm install hexo-cli -g
 ```
+{% alert warning %}
+Do not forget to execute any installation from an <b>elevated</b> prompt. Packages will be incomplete and the application will not run properly if you do not run your command shell under administrator privileges.<br>
+{% endalert %}
 
-Now we can install the hexo application, with "node-blog" (or whichever name you want to give it) being the name of our application.
+Now we can install the hexo application, with "node-blog" being the name of our application (or whichever name you want to give it).
  ``` powershell
 D:\ cd development
 D:\development\hexo init node-blog. 
 ```
 
 <br><br><h4>Configuring the dependencies of the application</h4>
-Before we can label our application as fully configured, the NPM dependencies need to be installed. Get accustomed to this, as it will always be one of the first steps when you're going to set up a Node application. 
-
-Node package manager is a command line program that allows us to manage NodeJS libraries. These libraries contain reusable code to prevent us from having to reinvent the wheel. In the case of our blogging application, the dependencies include all of the Hexo modules. Code for the CLI of Hexo. Code for the application server. Code for the templating, views and routes of the blog. Etc. Installing dependencies is always in the same manner. We navigate to the directory where the package.json file is located and run the command "npm install". Here is what the file will look like for our blogging app: 
+Before we can label our application as fully configured, the NPM dependencies need to be installed. Node package manager is a command line program that allows us to manage NodeJS libraries. These libraries contain reusable code to prevent us from having to reinvent the wheel. In the case of our blogging application, the dependencies include all of the Hexo modules. Code for the CLI of Hexo. Code for the application server. Code for the templating, views and routes of the blog. Etc. Installing dependencies is always in the same manner. We navigate to the directory where the package.json file is located and run the command "npm install". Here is what the file will look like for our blogging app: 
 
 ``` powershell
 {
@@ -83,18 +81,48 @@ Node package manager is a command line program that allows us to manage NodeJS l
 Let's install all of these important components with the following commands:
 
 ``` powershell
-D:\development cd blog
-D:\development\blog npm install 
+D:\development\node-blog cd node-blog
+D:\development\node-blog npm install 
 ```
 
 In case you encounter some errors, including "***", you did not follow my advice to run the console with administrator privileges. Relaunch the console and reinstall the NPM modules. 
 
-Now is the time to get more excited. We have built our first NodeJS app, without really building anything! To check it out for yourselves, navigate to the working directory of the blog and run the following command: 
+Now is the time to get more excited. We have officially built our first NodeJS app, without having really built anything! It's magic. To check it out for yourself, navigate to the working directory of the blog and run the following command: 
 
 ``` powershell
-D:\development\blog hexo server
+D:\development\node-blog hexo server
 ```
 
-Navigate to the link in your browser. You'll be amazed to discover that your blog is up and running without having spent any effort on its development. 
-You can create blog posts (hexo new), But I'll skip that part, before we're going to go off topic. For in-depth notes of Hexo's functionality, I advise to visit this link. 
-More important than the looks of our blog, is the fact that the blog 
+Upon starting the web application server, you can navigate to the link in your browser. You'll be amazed to discover that the blogging application is up and running in our local environment. We can go on and manage this blog. Including, but not limited to creating posts (hexo new), generating static files (hexo generate) and migrating content from an excisting provider such as Wordpress (hexo migrate). All good and well, but I'll skip that part before we're going to go too off topic. In-depth notes of Hexo's functionality can be found on their [official website](https://hexo.io/docs/). More important than the looks of our blog, is how we're going to deploy it to the world wide web and continue maintaining it with minimum hassle and maximum joy.
+
+<br><br><h4>Preparing the application for version control through Git(hub)</h4>
+
+Git and Github have been a long time answer to painless version control. In terms of what it can do for our application, it will keep our code centralized and maintainable. When changes are happening to our code, the Github repository will provide the exact lines that have been modified and by who. In addition we have full control to manage who can make adjustments to the code. First we will install Git from the following [link](https://git-scm.com/downloads). Complete the wizzard and select the options that you personally desire.<br><br>
+
+{% image http://s8.postimg.org/7n3vhz6s5/2016_03_01_20_46_46_Start.png %}
+
+We can initialize our project's directory as a Git repository. Change into the directory from the command line and run the init command in the following fashion: 
+
+``` powershell
+D:\development\node-blog git init
+```
+
+Stage and prepare the files for the first commit to our online Github repository.
+``` powershell
+D:\development\node-blog git add .
+D:\development\node-blog git commit -m "first commit"
+```
+
+Next we will set up the repository on [Github](http://github.com) to host the project on a centralized place. Login to your account and initialize the "node-app" repository without a README file. Open the repository and check the repository's URL as a pure reference.<br><br>
+{% image http://s14.postimg.org/63j15hggh/2016_03_01_20_59_58_Laure_Kamalandua_node_app.png %}
+<br>We will need the URL to add the files from our local Git repository to Github. Return to your command shell to finish up adding the remote:
+
+``` powershell
+D:\development\node-blog git remote add origin https://github.com/LaureKamalandua/node-app.git
+D:\development\node-blog git push origin master
+```
+Both Git and Github are configured. The changes in our local repository have been succesfully added to the remote repository. If you want to verify this step. Log back in to your Github account and check the content of your newly created repository. All of the files will be present. Besides the afforementioned perks of version control, there is an extremely important reason why we're running with Github. That is, Heroku.
+
+<br><br><h4>Setting up Heroku and syncing the deployment through Github</h4>
+
+Heroku is a cloud platform that lets companies build, deliver, monitor and scale apps. It will allow us to instantly deploy our application live on a development environment, without having to worry about the infrastructural headache. Such as imaging servers, finetuning web servers, databases, proxies, monitoring and anything you can imagine. In addition, code pushed to the "master" branche on Github will automatically go live in our our development environment (or according to different schedules if we desire to) whenever the Github repository received a new "push".

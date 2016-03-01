@@ -24,4 +24,3 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 http.request(options, callback).end();
-console.log('this is cool');

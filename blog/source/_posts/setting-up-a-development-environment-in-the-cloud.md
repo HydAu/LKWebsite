@@ -39,4 +39,4 @@ The following design reflects what we’ll get into:
 <p>{% hl_text #b7fbb7 %}A Heroku server. This will be our development/production barrier. The application developed on our client machine will be live on this location and automatically refreshed every single time files on the Github repository are updated. This will allow us to release changes into production when we feel ready to commit to them.{% endhl_text %}</p>      
 <p>{% hl_text #ddd8fb %}A production server running on Linux Debian 8 (Jessie). After we have provisioned changes and feel like things are looking great on the Heroku development environment, we will finally pull the Github changes into production on an incremental basis.{% endhl_text %}</p> 
 
-So this was a brief introduction of what we’re going to be working on. I look forward to lead you through Part II of this series in an upcoming post. 
+So this was a brief introduction of what we’re going to be building. I look forward to lead you through Part II of this series in an upcoming post. 

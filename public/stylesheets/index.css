@@ -293,8 +293,8 @@ a:focus {
     padding: 170px 0;
     text-align: center;
     color: #fff;
-    background-color: #22304a;
-     background: url(../images/new-york.jpg) no-repeat bottom center scroll;
+    /*background-color: #22304a;*/
+     background: url(../images/bg.png) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -302,7 +302,7 @@ a:focus {
 }
 
 #profile-header h2 {
-    padding-top: 100px;
+    padding-top: 30px;
     font-weight: 400;
 }
 
@@ -327,7 +327,7 @@ a:focus {
 }
 
 #blog h3 {
-  padding-top: 60px;
+  padding-top: 110px;
   font-size: 22px;
 }
 
@@ -337,7 +337,7 @@ a:focus {
 }
 
 .bg-color {
-	height: 290px;
+	height: 390px;
 	margin: 0px;
 }
 
@@ -363,15 +363,15 @@ a:focus {
 }
 
 .bg-jelly {
-	background-color: #222f47;
+	background-color: #214055;
 }
 
 .bg-turqoise {
-	background-color: #202b40;
+	background-color: #326080;
 }
 
 .bg-green {
-	background-color: #1b2638; 
+	background-color: #284e68; 
 }
 
 .bg-yellow {
@@ -380,11 +380,11 @@ a:focus {
 
 /* -- Footer Section -- */
 #pre-footer {
-    background-color: #171f2e;
+    background-color: #1b3444;
 }
 
 #pre-footer p {
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 28px;
 }
 

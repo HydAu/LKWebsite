@@ -7,15 +7,15 @@ tags:
 - IDE
 coverImage: header-2.jpg
 ---
-Visual Studio Code is Microsoft's latest integrated development environment. It's available on Windows, Linux, Mac and entirely free. Partly based on Github's Atom engine, I decided to give it a spin. To my surprise it was quite an upgrade compared to "Sublime Text 3" and I haven't looked back ever since.<!-- more --> 
+Visual Studio Code is Microsoft's latest integrated development environment. It's available on Windows, Linux and Mac. With it's aim to be the tool of choice for web and cloud application development across any platform, I decided to give it a spin. To my surprise, I haven't looked back since.<!-- more --><br><br>
 
-1. Language support 
-2. Layout 
-3. Git integration
-4. Grunt integration
-5. IntelliSense and peek definitions 
-6. Extentions
-7. TypeScript integration
-8. Debugging geatures
-9. Workspace customization
-10. Themes
+<h5>1. Language support</h5>
+<h5>2. Layout</h5> 
+<h5>3. Git integration</h5>
+<h5>4. Grunt integration</h5>
+<h5>5. IntelliSense and peek definitions</h5> 
+<h5>6. Extentions</h5>
+<h5>7. TypeScript integration</h5>
+<h5>8. Debugging geatures</h5>
+<h5>9. Workspace customization</h5>
+<h5>10. Themes</h5>

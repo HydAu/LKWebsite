@@ -12,7 +12,7 @@ tags:
 - Setting up a development and production environment in the cloud
 coverImage: header-2.jpg
 ---
-In the previous post I gave a brief introduction to the topic of this series and how we were going to approach setting up a development and production environment in the cloud. Ideally automating the application releases as much as possible. Now, we're going to get our hands dirty. This post will cover the setup of the development environment with the objective to get to the production environment in Part III. <!-- more -->Let's work our way up in the following order:<br>
+In the previous post I gave a brief introduction to the topic of this series and how we were going to approach setting up a development and production environment in the cloud. Ideally automating the application releases as much as possible. Now, we're going to get our hands dirty. This post will cover the setup of the local development environment with the objective to get to the live development environment in Part III. <!-- more -->Let's work our way up in the following order:<br>
 
 {% image http://s11.postimg.org/bn5019hib/high_level_2.jpg %}
 
@@ -20,8 +20,6 @@ In the previous post I gave a brief introduction to the topic of this series and
 2. Setting up our first application
 3. Configuring the dependencies of the application
 4. Preparing the application for version control through Github
-5. Setting up Heroku and syncing the deployment through Github
-6. Testing the development environment
 
 <br>
 <h4>Installing NodeJS</h4>
@@ -126,25 +124,4 @@ D:\development\node-blog git push remote-computer-name master
 ```
 Both Git and Github are configured. The changes in our local repository have been succesfully added to the remote repository. If you want to verify this step. Log back in to your Github account and check the content of your newly created repository. All of the files will be present. Besides the afforementioned perks of version control, there is an extremely important reason why we're running with Github. That is, Heroku.
 
-<br><h4>Setting up Heroku and syncing the deployment through Github</h4>
-Heroku is a cloud platform that lets companies build, deliver, monitor, back-up and scale apps. For us, that means the ability to automate application deployment to a live development environment, without having to undergo the infrastructural headache (imaging servers, finetuning web servers, configuring databases, setting up monitoring). The Heruko containers run on Linux, are Docker compatible and applications can easily be configured from the dashboard. 
-
-{% image http://s22.postimg.org/c7v0cylkx/heroku.png %}
-
-First we're going to create an account on [Heroku](http://heroku.com) and install the Heroku CLI from the following [link](https://toolbelt.heroku.com/). The wizzard is self explanatory with no additional options to configure. Once installed we can login to Heroku from the command shell to start deployment from our application to Heroku. Open the shell and complete login:
-``` bash
-D:\development\node-blog heroku login
-Enter your Heroku credentials. 
-Email: 
-Password (typing will be hidden):
-Logged in as laure.kamalandua@gmail.com
-```
-Deploying the application to Heroku involves creating a Heroku application and copying the source code from our Git repository to the Heroku instance. A git remote (named heroku) will be created pointing to our local git repository. Change into the root of our project's folder where the .git directory is located and run the following commands: 
-```bash
-D:\development\node-blog heroku create node-app-dev
-D:\development\node-blog git push node-app-dev master
-```
-
-
-
-In addition, code pushed to the "master" branche on Github will automatically go live in our our development environment (or according to different schedules if we desire to) whenever the Github repository received a new "push".
+Heroku is a cloud platform that lets companies build, deliver, monitor, back-up and scale apps. For us, that means the ability to automate application deployment to a live development environment, without having to undergo the infrastructural headache (imaging servers, finetuning web servers, configuring databases, setting up monitoring). In Part III of this series we will finish the add the live development environment on top of the local environment. Until then, you'll have to stay tuned and experiment ...

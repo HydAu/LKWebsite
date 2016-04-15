@@ -195,7 +195,7 @@ a:focus {
     margin-bottom: 0;
     text-transform: uppercase;
     font-family: Lato,sans-serif;
-    background-color: #192539;
+    background-color: #1d283c;
 }
 
 .navbar-brand {
@@ -282,7 +282,8 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         padding: 10px;
-        background: #192539;
+        background: rgb(122, 78, 150);
+        background: rgba(122, 78, 150, .8);
     }
 }
 
@@ -294,7 +295,7 @@ a:focus {
     text-align: center;
     color: #fff;
     /*background-color: #22304a;*/
-     background: url(../images/bg.png) no-repeat bottom center scroll;
+     background: url(../images/bg.jpg) no-repeat bottom center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -302,7 +303,7 @@ a:focus {
 }
 
 #profile-header h2 {
-    padding-top: 30px;
+    padding-top: 80px;
     font-weight: 400;
 }
 
@@ -317,10 +318,11 @@ a:focus {
 }
 
 #blog a {
-  color: #fff;
+  color: #434343;
 }
 
 #blog p {
+    color: #434343;
     font-size: 18px;
     text-align: left;
     padding-left: 20px;
@@ -337,6 +339,7 @@ a:focus {
 }
 
 .bg-color {
+  border-right: 2px solid #c2c2c2;
 	height: 390px;
 	margin: 0px;
 }
@@ -363,15 +366,15 @@ a:focus {
 }
 
 .bg-jelly {
-	background-color: #214055;
+	background-color: #d2d2d2;
 }
 
 .bg-turqoise {
-	background-color: #326080;
+	background-color: #d2d2d2;
 }
 
 .bg-green {
-	background-color: #284e68; 
+	background-color: #d2d2d2; 
 }
 
 .bg-yellow {
@@ -380,12 +383,16 @@ a:focus {
 
 /* -- Footer Section -- */
 #pre-footer {
-    background-color: #1b3444;
+    background-color: #7a4e96;
 }
 
 #pre-footer p {
     font-size: 18px;
     padding-top: 28px;
+}
+
+#pre-footer a {
+  color: white;
 }
 
 #footer {

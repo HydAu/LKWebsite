@@ -4,8 +4,7 @@ date: 2016-02-17 19:32:36
 tags: 
 - Powershell
 - Inspiration
-coverImage: header-2.jpg
-clearReading: true
+coverImage: empty
 ---
 <p>A couple of days ago, I bumped into a published script on Technet, named "Inspire Me". It would promise to print interesting quotes straight into your Powershell console. My enthusiasm instantly dropped when I examined the script and encountered the following lines:<!-- more --></b>
 ```powershell

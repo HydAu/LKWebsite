@@ -324,11 +324,18 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+#blog p {
+  text-transform: uppercase;
+  color: #929292;
+  padding-bottom: 30px;
+  font-weight: 700;
+}
+
 #blog h3 {
   font-size: 25px;
   color: #454545;
   padding-top: 70px;
-  padding-bottom: 60px;
+  margin-bottom: 5px;
 }
 
 .nopadding {

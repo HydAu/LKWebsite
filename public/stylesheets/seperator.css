@@ -110,6 +110,7 @@ section::before, section::after {
 /* Big Triangle */
 
 svg#bigTriangleColor {
+  display: none;
   transform: rotate(180deg);
   margin-bottom: -5px;
   pointer-events: none;

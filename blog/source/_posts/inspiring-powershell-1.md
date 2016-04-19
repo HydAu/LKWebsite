@@ -23,11 +23,11 @@ The developer had hard-coded the inspirational quotes, which is not inspiring at
 You can check <b>"Get-Inspired.ps1"</b> right here or clone it from Github on https://github.com/LaureKamalandua/get-inspired.git</p>
 
 ```powershell
-# -------------------------------------------------  Author        :   Laure Kamalandua  ----------------------------------------------------- #
+# -------------------------------------------------  Author        :   Laure Kamalandua  ------------------------------------------------- #
 # -------------------------------------------------  Contact       :   laure.kamalandua@gmail.com  --------------------------------------- #
 # -------------------------------------------------  Website       :   http://www.laurekamalandua.com  ----------------------------------- #
-# -------------------------------------------------  Version       :   1 ---------------------------------------------------------------------------- #
-# -------------------------------------------------  Description   :   Fetches a random inspirational quote ------------------------------- #
+# -------------------------------------------------  Version       :   1 ----------------------------------------------------------------- #
+# -------------------------------------------------  Description   :   Fetches a random inspirational quote ------------------------------ #
 
 function Get-Inspired() { 
     $APIurl = 'http://www.forismatic.com/api/1.0/' 
@@ -78,4 +78,3 @@ function Set-PSProfile {
     }
 }      
 ```
-

@@ -69,3 +69,7 @@ theme: tranquilpeak
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type:
+
+# Social Features 
+disqus_shortname: laurekamalandua
+

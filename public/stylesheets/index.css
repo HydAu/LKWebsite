@@ -289,8 +289,8 @@ a:hover, a:focus {
 
 #profile-header {
   width: 100%;
-  height: 700px;
-  padding: 170px 0;
+  height: 900px;
+  padding: 270px 0;
   text-align: center;
   color: #fff;
   /*background-color: #22304a;*/
@@ -304,8 +304,18 @@ a:hover, a:focus {
 #profile-header h2 {
   padding-top: 80px;
   font-weight: 400;
+  font-size: 32px;
 }
 
+@media(max-width:768px) {
+  #profile-header {
+    padding: 200px 0;
+    min-height: 1000px;
+  }
+  #profile-header h2 {
+    font-size: 31px;
+  }
+}
 
 /* -- Intro Section -- */
 
@@ -317,7 +327,8 @@ a:hover, a:focus {
 /* -- Blog Section -- */
 
 #blog {
-  background-color: #dadada;
+  padding-top: 35px;
+  background-color: #cfcfcf;
 }
 
 #blog a {

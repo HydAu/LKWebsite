@@ -317,12 +317,40 @@ a:hover, a:focus {
   }
 }
 
+
 /* -- Intro Section -- */
 
 #intro {
   display: none;
 }
 
+
+/* -- Error Section -- */
+
+#error-page {
+  height: 800px;
+  padding-top: 360px;
+  background: url(../images/bg.jpg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#error-page pre {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+#error-page h2 {
+  font-size: 140px;
+}
+
+@media(max-width:768px) {
+  #error-page {
+    padding-top: 140px;
+  }
+}
 
 /* -- Blog Section -- */
 

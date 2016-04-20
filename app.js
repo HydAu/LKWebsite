@@ -4,16 +4,22 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var ping = require('ping');
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var visitor_count = 0;
 var app = express();
 
 // IP location
 var get_ip = require('ipware')().get_ip;
+var ping = require('ping');
 app.use(function (req, res, next) {
   var ip_info = get_ip(req);
+  var visitor_count_update = visitor_count++;
+  var session_date = new Date();
   console.log(ip_info);
-  // { clientIp: '127.0.0.1', clientIpRoutable: false }
+  console.log("{" + " visitor: " + visitor_count_update + " }");
+  console.log("{ " + session_date + " }");
   next();
 });
 

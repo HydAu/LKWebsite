@@ -7,6 +7,7 @@ html
     meta(name='description', content='Laure Kamalandua: A cloud, startup and devops enthusiast. Sharing my passion for Microsoft, Azure, Powershell and web development advancements.')
     meta(name='author', content='Laure Kamalandua')
     title Laure Kamalandua
+    block scripts
     // Bootstrap Core CSS
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     // Custom CSS
@@ -23,6 +24,7 @@ html
       script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
       script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
   body#page-top(data-spy='scroll', data-target='.navbar-fixed-top')
+    block content
     // Navigation Section
     nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
       .container
@@ -56,109 +58,7 @@ html
               <li>
               <a class="" href="#github"><i class="fa fa-facebook"></i></a>
               </li>
-    // Profile Sections
-    #profile-header
-      .container
-        .row
-          .col-md-8.col-md-offset-2.centered
-            //img.img-circle(src='../images/profile-pic.png', height='200px', width='200px')
-            h2
-              b A cloud, 
-              b startup 
-              | and 
-              b devops 
-              | enthusiast
-              br
-              br
-              | Sharing my passion for Microsoft, Azure, Powershell and web development advancements.
-            a.btn.btn-circle.page-scroll(href='#blog')
-              i.fa.fa-angle-double-down.animated
-              
-    // Intro Section
-    #intro
-      .container
-        .row
-          .col-md-8.col-md-offset-2.centered
-            h2
-              | Just a 
-              b cloud
-              |, 
-              b startup() 
-              | and 
-              b devops 
-              | enthusiast
-              br
-              |                 sharing my stories
-            a.btn.btn-circle.page-scroll(href='#intro')
-              i.fa.fa-angle-double-down.animated
-    svg#bigTriangleColor(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
-      path(d='M0 0 L50 100 L100 0 Z')
-    // Console Section
-    #console(div='')
-      .window
-        .handle
-          .buttons
-            button.minimize
-            button.maximize
-          span.title
-        .terminal
-          #typing
-            main.scene.shell
-              .actor
-                .actor__prefix
-                #alpha.actor__content
-    // Typing Section
-    #typing
-      main.scene.shell
-        .actor
-          .actor__prefix
-          #alpha.actor__content
-    // Blog Section
-    #blog
-      .row.nopadding.centered
-        .col-md-4.bg-color.bg-jelly.squares
-          a(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/')
-            h3 6 reasons to ditch Sublime Text for Microsoft Visual Code
-            p Apr 15, 2016 
-        .col-md-4.bg-color.bg-turqoise.squares
-          a(href='http://laurekamalandua.com/blog/Tech-Events-February/')
-            h3 Tech events happening in February &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            p Feb 19, 2016
-        .col-md-4.bg-color.bg-green.squares
-          a(href='http://laurekamalandua.com/blog/inspiring-powershell-1/')
-            h3 Inspiring Powershell and getting retweeted by Jeffrey Snover
-            p Feb 17, 2016
-       row.nopadding.centered
-        .col-md-12.bg-color.bg-jelly.squares
-          a(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/')
-            h3 Bash on Windows - Getting Started (Part I) 
-            p Apr 19, 2016 
-
- 
     // Footer Section
-    #footer
-      .container
-        .row
-          .col-md-12.centered
-            a(href='http://github.com/laurekamalandua', target='_blank')
-              i.fa.fa-github
-            a(href='http://twitter.com/laurekamalandua', target='_blank')
-              i.fa.fa-twitter
-            a(href='http://instagram.com/laurellondon', target='_blank')
-              i.fa.fa-instagram
-            a(href='http://linkedin.com/laurellondon', target='_blank')
-              i.fa.fa-linkedin
-    #pre-footer
-      .container
-        .row
-          .col-md-12.centered
-            p
-              | Developed with   
-              i.fa.fa-heart
-              br
-              | running on NodeJs 4.2.6, Express 4.13.4, Hexo 3.1.1 and Jade 1.11.0
-              br
-              a(href='mailto:laure.kamalandua@gmail.com') laure.kamalandua@gmail.com
     // Page Loading
     script(src='javascripts/loading.js')
     // jQuery

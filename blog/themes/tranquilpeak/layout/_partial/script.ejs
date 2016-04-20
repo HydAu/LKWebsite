@@ -5,7 +5,7 @@
     <% if (theme.disqus_shortname) { %>
         <script>
              var disqus_config = function () {
-                 this.page.url = '<%= post.permalink %>';
+                 this.page.url = 'http://laurekamalandua.com' + '<%= post.permalink %>';
                  <% if (post.disqusIdentifier) { %>
                     this.page.identifier = '<%= post.disqusIdentifier %>';
                  <% } else { %>

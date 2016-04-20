@@ -6,7 +6,7 @@ tags:
 - Linux
 - Windows 10
 - Microsoft Developer
-coverImage: https://cdn.pbrd.co/images/jnqeh8X.png
+coverImage: header.png
 ---
 What sounded like an April Fool's joke on Microsoft's Build 2016 conference has become a reality: Bash is available on Windows. At first glance my reaction wasn't euphoric. Being a long term Powershell fan and anti text-oriented IT pro. I felt like they had to give in to the Linux community. Rather than pushing their own agenda and  promoting the fact that Powershell is a solid and robust way of managing systems. <!-- more -->I know that many will debate on this point like a Mac/Windows, PS4/Xbox One, Ferrari/Lamborghini discussion, but this is my blog. If you don't like Microsoft, get out! Or at least get accustomed to the fact that some people like options, and taste is not a binary thing in which we have to choose one thing over the other. 
 <br>

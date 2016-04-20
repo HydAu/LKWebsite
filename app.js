@@ -7,6 +7,16 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var app = express();
+
+// IP location
+var get_ip = require('ipware')().get_ip;
+app.use(function (req, res, next) {
+  var ip_info = get_ip(req);
+  console.log(ip_info);
+  // { clientIp: '127.0.0.1', clientIpRoutable: false }
+  next();
+});
+
 // speed up loading dirs
 app.use(express.static(path.join(__dirname, 'public')));
 // view engine setup
@@ -23,7 +33,7 @@ app.use('/', routes);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
@@ -33,7 +43,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+  app.use(function (err, req, res, next) {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
@@ -44,7 +54,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,

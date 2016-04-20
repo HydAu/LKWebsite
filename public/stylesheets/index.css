@@ -309,8 +309,8 @@ a:hover, a:focus {
 
 @media(max-width:768px) {
   #profile-header {
-    padding: 200px 0;
-    min-height: 1000px;
+    padding: 150px 0;
+    min-height: 850px;
   }
   #profile-header h2 {
     font-size: 31px;

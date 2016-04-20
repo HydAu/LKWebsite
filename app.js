@@ -17,9 +17,9 @@ app.use(function (req, res, next) {
   var ip_info = get_ip(req);
   var visitor_count_update = visitor_count++;
   var session_date = new Date();
-  console.log(ip_info);
   console.log("{" + " visitor: " + visitor_count_update + " }");
   console.log("{ " + session_date + " }");
+  console.log(ip_info);
   next();
 });
 

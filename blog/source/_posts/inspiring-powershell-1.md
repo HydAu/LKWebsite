@@ -1,5 +1,5 @@
 ---
-title: Inspiring Powershell
+title: Inspiring Powershell and getting retweeted by Jeffrey Snover
 date: 2016-02-17 19:32:36
 tags: 
 - Powershell

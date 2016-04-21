@@ -307,6 +307,18 @@ a:hover, a:focus {
   font-size: 32px;
 }
 
+#post {
+  display: none;
+}
+
+#post h2 span {
+  padding: 20px;
+  background: rgb(43, 123, 185);
+  background: rgba(43, 123, 185, 0.4);
+  /*background-color: #413846;*/
+  border-radius: 5px;
+}
+
 @media(max-width:768px) {
   #profile-header {
     padding: 150px 0;
@@ -342,6 +354,7 @@ a:hover, a:focus {
   color: white;
   border: none;
 }
+
 #error-page h2 {
   font-size: 140px;
 }
@@ -352,29 +365,33 @@ a:hover, a:focus {
   }
 }
 
+
 /* -- Blog Section -- */
 
 #blog {
-  padding-top: 35px;
-  background-color: #cfcfcf;
+  padding-top: 100px;
+  background: #514658;
+  padding-bottom: 100px;
+}
+
+#blog blockquote {
+  color: white;
+  font-size: 27px;
 }
 
 #blog a {
+  color: white;
   text-decoration: none;
 }
 
 #blog p {
-  text-transform: uppercase;
-  color: #929292;
-  padding-bottom: 30px;
   font-weight: 700;
+  font-size: 25px;
 }
 
-#blog h3 {
-  font-size: 25px;
-  color: #454545;
-  padding-top: 70px;
-  margin-bottom: 5px;
+.bg-color {
+  height: 320px;
+  margin: 0px;
 }
 
 .nopadding {
@@ -382,31 +399,35 @@ a:hover, a:focus {
   margin: 0px;
 }
 
-.bg-color {
-  border: 35px solid #cfcfcf;
+.squares {
+  padding-top: 90px;
+}
+
+.squares i {
+  font-size: 50px;
 }
 
 .bg-jelly {
-  background-color: #dadada;
+  background-color: #514658;
 }
 
 .bg-turqoise {
-  background-color: #dadada;
+  background-color: #514658;
 }
 
 .bg-green {
-  background-color: #dadada;
+  background-color: #514658;
 }
 
 .bg-yellow {
-  background-color: #dddddd;
+  background-color: #FDE3A7;
 }
 
 
 /* -- Footer Section -- */
 
 #pre-footer {
-  background-color: #cfcfcf;
+  background-color: #413846;
 }
 
 #pre-footer p {

@@ -117,7 +117,18 @@ svg#bigTriangleColor {
 }
 
 #bigTriangleColor path {
-  fill: #cfcfcf;
+  fill: #514658;
+}
+
+svg#bigTriangleDown {  
+  margin-bottom: -5px;
+  pointer-events: none;
+}
+
+#bigTriangleColorDown path {
+  background: red;
+  
+  fill: #514658;
 }
 
 

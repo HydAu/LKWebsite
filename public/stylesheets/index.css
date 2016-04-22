@@ -399,14 +399,6 @@ a:hover, a:focus {
   margin: 0px;
 }
 
-.squares {
-  padding-top: 90px;
-}
-
-.squares i {
-  font-size: 50px;
-}
-
 .bg-jelly {
   background-color: #514658;
 }
@@ -423,6 +415,22 @@ a:hover, a:focus {
   background-color: #FDE3A7;
 }
 
+@media(max-width:768px) {
+  .bg-color {
+    height: 240px;
+  }
+  #blog {
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+  #blog blockquote {
+    font-size: 25px;
+  }
+  #blog p {
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 
 /* -- Footer Section -- */
 

@@ -12,7 +12,7 @@ html
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     // Custom CSS
     link(href='stylesheets/index.min.css', rel='stylesheet')
-    link(href='stylesheets/seperator.css', rel='stylesheet')
+    link(href='stylesheets/seperator.min.css', rel='stylesheet')
     // Custom Fonts
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
@@ -66,10 +66,10 @@ html
           .col-md-8.col-md-offset-2.centered
             //img.img-circle(src='../images/profile-pic.png', height='200px', width='200px')
             h2
-              b A cloud, 
-              b startup 
+              b#one A cloud, 
+              b#two startup 
               | and 
-              b devops 
+              b#three devops 
               | enthusiast
               br
               br
@@ -87,55 +87,26 @@ html
               h2.purple
                 span 40 posts
               
-    // Intro Section
-    #intro
-      .container
-        .row
-          .col-md-8.col-md-offset-2.centered
-            h2
-              | Just a 
-              b cloud
-              |, 
-              b startup() 
-              | and 
-              b devops 
-              | enthusiast
-              br
-              |                 sharing my stories
-            a.btn.btn-circle.page-scroll(href='#intro')
-              i.fa.fa-angle-double-down.animated
+   
     svg#bigTriangleColor(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
       path(d='M0 0 L50 100 L100 0 Z')
     // Blog Section
     #blog 
       section.ss-style-triangles
         .row
+        .col-md-4.bg-turqoise.squares
+            blockquote
+               a#bg-title-one(href='http://laurekamalandua.com/blog/building-cloud-apps-with-azure/') Building Cloud apps with Microsoft Azure (Freebie)  
+            p#bg-date-one 28 APRIL 2016
           .col-md-4.bg-turqoise.squares
-            blockquote 
-               a(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/') Bash on Windows - Getting Started (Part I)
-            p 19 APRIL 2016
+            blockquote
+               a#bg-title-two(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/') Bash on Windows - Getting Started (Part I) 
+            p#bg-date-one 19 APRIL 2016
           .col-md-4.bg-jelly.squares
             blockquote 
-              a(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/') 6 reasons to ditch Sublime Text for Microsoft Visual Code
-            p 15 APRIL 2016
-          .col-md-4.bg-green.squares
-            blockquote 
-              a(href='http://laurekamalandua.com/blog/inspiring-powershell-1/') Inspiring Powershell and getting retweeted by Jeffrey Snover
-            p 17 FEB 2016
- 
-    // Footer Section
-    #footer
-      .container
-        .row
-          .col-md-12.centered
-            a(href='http://github.com/laurekamalandua', target='_blank')
-              i.fa.fa-github
-            a(href='http://twitter.com/laurekamalandua', target='_blank')
-              i.fa.fa-twitter
-            a(href='http://instagram.com/laurellondon', target='_blank')
-              i.fa.fa-instagram
-            a(href='http://linkedin.com/laurellondon', target='_blank')
-              i.fa.fa-linkedin
+              a#bg-title-three(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/') 6 reasons to ditch Sublime Text for Microsoft Visual Code
+            p#bg-date-two 15 APRIL 2016
+
     #pre-footer
       .container
         .row

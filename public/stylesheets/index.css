@@ -83,7 +83,6 @@ a:hover, a:focus {
   color: #71b9ec;
 }
 
-
 /* -- Alignments -- */
 
 .alignleft {
@@ -284,7 +283,6 @@ a:hover, a:focus {
   }
 }
 
-
 /* -- Profile Header Section -- */
 
 #profile-header {
@@ -304,7 +302,7 @@ a:hover, a:focus {
 #profile-header h2 {
   padding-top: 80px;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 29px;
 }
 
 #post {
@@ -325,23 +323,15 @@ a:hover, a:focus {
     min-height: 850px;
   }
   #profile-header h2 {
-    font-size: 31px;
+    font-size: 28px;
   }
 }
-
-
-/* -- Intro Section -- */
-
-#intro {
-  display: none;
-}
-
 
 /* -- Error Section -- */
 
 #error-page {
   height: 800px;
-  padding-top: 360px;
+  padding-top: 260px;
   background: url(../images/bg.jpg) no-repeat bottom center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -365,18 +355,16 @@ a:hover, a:focus {
   }
 }
 
-
 /* -- Blog Section -- */
 
 #blog {
-  padding-top: 100px;
-  background: #514658;
-  padding-bottom: 100px;
+  background: rgb(122, 78, 150);
+  padding-bottom: 0 !important;
 }
 
 #blog blockquote {
   color: white;
-  font-size: 27px;
+  font-size: 24px;
 }
 
 #blog a {
@@ -386,7 +374,7 @@ a:hover, a:focus {
 
 #blog p {
   font-weight: 700;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .bg-color {
@@ -411,10 +399,6 @@ a:hover, a:focus {
   background-color: #514658;
 }
 
-.bg-yellow {
-  background-color: #FDE3A7;
-}
-
 @media(max-width:768px) {
   .bg-color {
     height: 240px;
@@ -424,11 +408,11 @@ a:hover, a:focus {
   padding-bottom: 0;
 }
   #blog blockquote {
-    font-size: 25px;
+    font-size: 20px;
   }
   #blog p {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -448,39 +432,3 @@ a:hover, a:focus {
 #pre-footer a {
   color: #939393;
 }
-
-#footer {
-  display: none;
-  padding-top: 35px;
-  padding-bottom: 15px;
-}
-
-#footer i {
-  color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 26px;
-}
-
-#footer i:hover {
-  color: white;
-}
-
-@media(max-width:768px) {
-  #pre-footer {
-    padding-bottom: 20px;
-  }
-}
-
-
-/* -- Powershell Shell -- */
-
-
-/*
-.shell {
-	background: #000;
-	padding-top: 25px;
-	padding-bottom: 25px;
-    margin-bottom: -45px !important;
-}
-*/

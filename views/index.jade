@@ -11,10 +11,8 @@ html
     // Bootstrap Core CSS
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     // Custom CSS
-    link(href='stylesheets/index.css', rel='stylesheet')
-    link(href='stylesheets/typing.css', rel='stylesheet')
+    link(href='stylesheets/index.min.css', rel='stylesheet')
     link(href='stylesheets/seperator.css', rel='stylesheet')
-    link(href='stylesheets/console.css', rel='stylesheet')
     // Custom Fonts
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
@@ -76,6 +74,10 @@ html
               br
               br
               | Sharing my passion for Microsoft, Azure, Powershell and web development advancements.
+              br
+              br
+              br
+              | Read my blog
             a.btn.btn-circle.page-scroll(href='#blog')
               i.fa.fa-angle-double-down.animated
       #post
@@ -104,42 +106,22 @@ html
               i.fa.fa-angle-double-down.animated
     svg#bigTriangleColor(xmlns='http://www.w3.org/2000/svg', version='1.1', width='100%', height='100', viewbox='0 0 100 102', preserveaspectratio='none')
       path(d='M0 0 L50 100 L100 0 Z')
-    // Console Section
-    #console(div='')
-      .window
-        .handle
-          .buttons
-            button.minimize
-            button.maximize
-          span.title
-        .terminal
-          #typing
-            main.scene.shell
-              .actor
-                .actor__prefix
-                #alpha.actor__content
-    // Typing Section
-    #typing
-      main.scene.shell
-        .actor
-          .actor__prefix
-          #alpha.actor__content
     // Blog Section
-    #blog
-      .row.nopadding
-        .col-md-4.bg-color.bg-turqoise.squares
-          blockquote 
-            a(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/') Bash on Windows - Getting Started (Part I)
-          p 19 APRIL 2016
-        .col-md-4.bg-color.bg-jelly.squares
-          blockquote 
-            a(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/') 6 reasons to ditch Sublime Text for Microsoft Visual Code
-          p 15 APRIL 2016
-        .col-md-4.bg-color.bg-green.squares
-          blockquote 
-            a(href='http://laurekamalandua.com/blog/inspiring-powershell-1/') Inspiring Powershell and getting retweeted by Jeffrey Snover
-          p 17 FEB 2016
-
+    #blog 
+      section.ss-style-triangles
+        .row
+          .col-md-4.bg-turqoise.squares
+            blockquote 
+               a(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/') Bash on Windows - Getting Started (Part I)
+            p 19 APRIL 2016
+          .col-md-4.bg-jelly.squares
+            blockquote 
+              a(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/') 6 reasons to ditch Sublime Text for Microsoft Visual Code
+            p 15 APRIL 2016
+          .col-md-4.bg-green.squares
+            blockquote 
+              a(href='http://laurekamalandua.com/blog/inspiring-powershell-1/') Inspiring Powershell and getting retweeted by Jeffrey Snover
+            p 17 FEB 2016
  
     // Footer Section
     #footer
@@ -175,9 +157,6 @@ html
     script(src='javascripts/jquery.easing.min.js')
     // Custom Theme JavaScript
     script(src='javascripts/index.js')
-    // Animated Typing Javascript
-    script(src='javascripts/theater.js')
-    script(src='javascripts/typing.js')
     script(type='text/javascript')
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

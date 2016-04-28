@@ -13,16 +13,13 @@ body {
 
 section {
   position: relative;
-  padding: 10em 10%;
-  background: #2980b9;
+  padding: 6em 10%;
+  background: #514658;
   color: #fff;
   text-align: center;
 }
 
-
 /*** Individual section styles and separators ***/
-
-
 /* Common style for pseudo-elements */
 
 section::before, section::after {
@@ -31,10 +28,9 @@ section::before, section::after {
   pointer-events: none;
 }
 
-
 /* Triangles */
 
-.ss-style-triangles::before, .ss-style-triangles::after {
+.ss-style-triangles::before {
   left: 50%;
   width: 100px;
   height: 100px;
@@ -44,7 +40,7 @@ section::before, section::after {
 
 .ss-style-triangles::before {
   top: -50px;
-  background: #2980b9;
+  background: #514658
 }
 
 .ss-style-triangles::after {

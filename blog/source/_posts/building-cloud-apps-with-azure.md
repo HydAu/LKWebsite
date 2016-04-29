@@ -7,7 +7,7 @@ tags:
 coverImage: https://cdn.pbrd.co/images/wNAdLQU.png
 ---
 
-Roaming the web and following the Microsoft developer page through every channel really has its benefits. Today I discovered an incredibly valuable book to get started with building apps on the Azure stack. 198 pages on the topic of tailoring applications for cloud environments<!-- more -->. Definitely tune in if you're interested about:
+Roaming the web and following the [Microsoft Developer](https://twitter.com/msdev) page through every channel really has its benefits. Today I discovered an incredibly valuable book to get started with building apps on the Azure stack. 198 pages on the topic of tailoring applications for cloud environments<!-- more -->. Definitely tune in if you're interested about:
 <br>
 
 - Automation

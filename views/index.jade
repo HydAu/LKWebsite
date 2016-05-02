@@ -12,7 +12,7 @@ html
     link(href='stylesheets/bootstrap.css', rel='stylesheet')
     // Custom CSS
     link(href='stylesheets/index.min.css', rel='stylesheet')
-    link(href='stylesheets/seperator.min.css', rel='stylesheet')
+    link(href='stylesheets/seperator.css', rel='stylesheet')
     // Custom Fonts
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css')
     link(href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900', rel='stylesheet', type='text/css')
@@ -92,20 +92,20 @@ html
       path(d='M0 0 L50 100 L100 0 Z')
     // Blog Section
     #blog 
-      section.ss-style-triangles
+      section
         .row
-          .col-md-4.bg-turqoise.squares
+          .col-md-4.bg-turqoise
+            blockquote
+               a#bg-title-one(href='monify-a-dashboard-on-powershell-and-nodejs/') Developing Monify - A monitoring dashboard built with Powershell and NodeJS (Part I) 
+            p#bg-date-one 02 MAY 2016
+          .col-md-4.bg-turqoise
             blockquote
                a#bg-title-one(href='http://laurekamalandua.com/blog/building-cloud-apps-with-azure/') Building Cloud apps with Microsoft Azure (Freebie)  
             p#bg-date-one 28 APRIL 2016
-          .col-md-4.bg-turqoise.squares
+          .col-md-4.bg-turqoise
             blockquote
                a#bg-title-two(href='http://laurekamalandua.com/blog/bash-on-windows-get-started-part-1/') Bash on Windows - Getting Started (Part I) 
             p#bg-date-one 19 APRIL 2016
-          .col-md-4.bg-jelly.squares
-            blockquote 
-              a#bg-title-three(href='http://laurekamalandua.com/blog/6-reasons-to-ditch-sublime-text/') 6 reasons to ditch Sublime Text for Microsoft Visual Code
-            p#bg-date-two 15 APRIL 2016
 
     #pre-footer
       .container

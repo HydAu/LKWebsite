@@ -13,7 +13,10 @@ body {
 
 section {
   position: relative;
-  padding: 6em 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 115px;
+  padding-bottom: 75px;
   background: #514658;
   color: #fff;
   text-align: center;
@@ -48,6 +51,14 @@ section::before, section::after {
   z-index: 10;
   background: inherit;
 }
+
+
+@media(max-width:768px) {
+  .ss-style-triangles {
+    display: none;
+  }
+}
+
 
 
 /* Double Diagonal line */
@@ -126,7 +137,6 @@ svg#bigTriangleDown {
   
   fill: #514658;
 }
-
 
 /* Curves */
 
